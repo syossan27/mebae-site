@@ -1,0 +1,32 @@
+.service-description {
+    font-size: 16px !important;
+}
+
+.notes {
+    font-size: 7px !important;
+}
+
+.receive-present {
+    margin-bottom: 20px;
+}
+
+.jumbotron {
+    padding-bottom: 0px !important;
+    margin-bottom:: 0px !important;
+}
+
+img#santa {
+    width: 300px;
+}
+
+img#present {
+    width: 150px;
+}
+
+div.present-block {
+    text-align: center;
+}
+
+div.santa-block {
+    text-align: center;
+}
