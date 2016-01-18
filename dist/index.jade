@@ -1,0 +1,31 @@
+doctype html
+html(lang='ja')
+  head
+    meta(charset='utf-8')
+    title Mebae
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', integrity='sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS', crossorigin='anonymous')
+    link(rel='stylesheet', href='/static/index.css')
+  body
+    nav.navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          a.navbar-brand(href='/') Mebae
+    .container.content
+      #instruction
+        pre
+          | edit ~/.mebae/config.toml
+          | -------------------------------------------------------------
+          | [config]
+          | access_token = #{access_token}
+          | -------------------------------------------------------------
+          | 
+          | Mebae nou can use.
+          | Try to create Github Repository.
+          | 
+          | $ mebae create hoge
+      footer.footer
+        hr
+        p © 2015 
+          a(href="https://github.com/syossan27") syossan27
