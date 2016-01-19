@@ -36,7 +36,7 @@ app.get('/', function(req, res){
     this.close()
 
     if (access_token === "bad_verification_code") {
-      res.redirect('https://github.com/login/oauth/authorize?client_id=1c32c0ef97c2f71096fa')
+      res.redirect('https://github.com/login/oauth/authorize?client_id=1c32c0ef97c2f71096fa&scope=repo,public_repo,delete_repo')
     } else {
       res.render('index', { access_token: access_token })
     }
